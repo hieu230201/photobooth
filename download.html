@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NTH.STUDIO</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/2c/5b/ab/2c5bab6723ef8f80152bb4aaa4920fef.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.pinimg.com/736x/2c/5b/ab/2c5bab6723ef8f80152bb4aaa4920fef.jpg"
+    />
 
-</head>
-<body class="download">
-    <div>
-        <h1 class="logo2">NTH.STUDIO</h1>
-    </div>
-
-    <div class="main-container">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="download bg-light">
+    <nav class="fixed-top navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a class="logo2 navbar-brand" href="index.html">NTH.STUDIO</a>
+      </div>
+    </nav>
+    <div class="container overflow-auto">
+      <div class="main-container">
         <canvas id="finalCanvas"></canvas>
 
         <div class="right">
-            <h2>Select your frame color!</h2>
-            
-            <div class="color-grid">
-                <button class="color-btn" data-color="img/nude.jpg" style="background-image: url('img/nude.jpg');"></button>
-                <button class="color-btn" data-color="img/lilac.jpg" style="background-image: url('img/lilac.jpg');"></button>
-                <button class="color-btn" data-color="img/blue.jpg" style="background-image: url('img/blue.jpg');"></button>
-                <button class="color-btn" data-color="img/red.jpg" style="background-image: url('img/red.jpg');"></button>
-                <button class="color-btn" data-color="img/cobalt.jpg" style="background-image: url('img/cobalt.jpg');"></button>
-                <button class="color-btn" data-color="img/matcha.jpg" style="background-image: url('img/matcha.jpg');"></button>
-                <button class="color-btn" data-color="img/valentines.png" style="background-image: url('img/valentines.png');"></button>
-                <button class="color-btn" data-color="img/valentines1.png" style="background-image: url('img/valentines1.png');"></button>
-                <button class="color-btn" data-color="img/valentines2.png" style="background-image: url('img/valentines2.png');"></button>
-            </div>
-            
+          <h2 class="h4">Select your frame color!</h2>
 
-            <div class="button-last">
-                <a href="photobooth.html"><button>Retake</button></a>
-                <button id="download-btn">Download</button>
-            </div>
+          <!-- Photobooth templates -->
+          <div id="color-grid" class="color-grid"></div>
+
+          <div class="d-flex justify-content-between gap-3">
+            <button
+              onclick="window.location.href='photobooth.html'"
+              class="btn btn-lg text-decoration-none"
+            >
+              Retake
+            </button>
+            <button id="download-btn" class="btn btn-lg">Download</button>
+          </div>
         </div>
-    </div>
-    
-    <div>
-        <h3 class="footer-text">
-            MADE WITH LOVE © 2025 BY NTH
-        </h3>
+      </div>
+
+      <footer class="footer-text d-flex flex-column fixed-bottom text-center">
+        <span>MADE WITH LOVE </span>
+        <span>© 2025 BY NTH</span>
+      </footer>
     </div>
 
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="download.js"></script>
-
-</body>
+  </body>
 </html>
